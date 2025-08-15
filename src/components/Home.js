@@ -153,7 +153,7 @@ export default function MyHome() {
             <div className="text">
               Un voleur expérimenté s’infiltre dans les rêves des autres pour voler leurs secrets les plus précieux.
             </div>
-            <Link to="/tous-les-films" className="explore-btn">Explorer maintenant</Link>
+            <Link to="/tousLesFilms" className="explore-btn">Explorer maintenant</Link>
           </div>
         </SwiperSlide>
 
@@ -164,7 +164,7 @@ export default function MyHome() {
             <div className="text">
               Batman affronte le Joker dans un combat psychologique et explosif pour l’âme de Gotham City.
             </div>
-            <Link to="/tous-les-films" className="explore-btn">Explorer maintenant</Link>
+            <Link to="/TousLesFilms" className="explore-btn">Explorer maintenant</Link>
           </div>
         </SwiperSlide>
 
@@ -175,7 +175,7 @@ export default function MyHome() {
             <div className="text">
               Des explorateurs voyagent à travers un trou de ver pour sauver l’humanité de l’extinction.
             </div>
-            <Link to="/tous-les-films" className="explore-btn">Explorer maintenant</Link>
+            <Link to="/TousLesFilms" className="explore-btn">Explorer maintenant</Link>
           </div>
         </SwiperSlide>
       </Swiper>

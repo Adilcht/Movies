@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 function MyFooter() {
   return (
@@ -51,7 +51,7 @@ function MyFooter() {
         }
 
         .footer-nav {
-          display: flex; /* horizontal */
+          display: flex;
           flex-direction: row;
           gap: 25px;
           align-items: center;
@@ -61,10 +61,12 @@ function MyFooter() {
           color: yellow !important;
           font-family: 'Dancing Script', cursive;
           font-size: 1.1rem;
+          text-decoration: none;
         }
 
+        /* Retirer l'effet hover sur les liens */
         .footer-nav .nav-link:hover {
-          color: orange !important;
+          color: yellow !important;
         }
 
         .footer-bottom {
@@ -107,14 +109,14 @@ function MyFooter() {
 
             {/* Menu horizontal */}
             <div>
-              <Nav className="footer-nav">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#tous_les_films">Tous les films</Nav.Link>
-                <Nav.Link href="#propos">À propos de nous</Nav.Link>
-              </Nav>
+              <div className="footer-nav">
+                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/TousLesFilms" className="nav-link">Tous les films</Link>
+                <Link to="/Propos" className="nav-link">À propos</Link>
+              </div>
             </div>
 
-            {/* Réseaux sociaux avec texte */}
+            {/* Réseaux sociaux */}
             <div>
               <div className="section-title">Suivez-nous</div>
               <div className="social-icons">
@@ -125,7 +127,7 @@ function MyFooter() {
             </div>
           </div>
 
-          {/* Texte en bas */}
+          {/* Bas de page */}
           <div className="footer-bottom">
             © 2025 MovieScope. All rights reserved.
           </div>
